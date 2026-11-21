@@ -1,0 +1,111 @@
+/* =========================================================
+   ZONA DE CONFLICTO PAREJA B (CODERS 3 Y 4): VARIABLES
+   ========================================================= */
+:root {
+  --color-primario: #064e3b;
+  --color-secundario: #059669;
+  --color-acento: #10b981;
+  --color-fondo: #f0fdf4;
+  --color-texto: #1e293b;
+  --color-blanco: #ffffff;
+  --sombra-suave: 0 6px 16px rgba(6, 78, 59, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.site-header {
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  padding: 18px 0;
+  box-shadow: var(--sombra-suave);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.main-nav a {
+  color: var(--color-blanco);
+  text-decoration: none;
+  margin-left: 16px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.main-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.hero-banner {
+  background: linear-gradient(135deg, #064e3b 0%, #059669 100%);
+  color: var(--color-blanco);
+  padding: 44px 30px;
+  border-radius: 14px;
+  margin: 28px 0;
+  text-align: center;
+}
+
+/* ZONA DE CONFLICTO PAREJA B: GRILLA Y TARJETAS */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 22px;
+  margin: 24px 0 40px;
+}
+
+.card {
+  background-color: var(--color-blanco);
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: var(--sombra-suave);
+  border-top: 4px solid var(--color-acento);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.14);
+}
+
+.badge {
+  display: inline-block;
+  background-color: #d1fae5;
+  color: #065f46;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 999px;
+  margin-top: 12px;
+  text-decoration: none;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 24px;
+  background-color: #0f172a;
+  color: #cbd5e1;
+  margin-top: 40px;
+}
